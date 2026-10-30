@@ -32,5 +32,7 @@ A web portal where tertiary students try small aviation tools in the browser.
 
 ### Phases
 1. **Phase 1: portal plus first tool.** The homepage, theme toggle, and one tool: the ATC Radar Simulator, a controller game (type commands, keep planes apart, land them, get a score).
+   - [x] Step 1: portal homepage with a placeholder "Tool 1 — coming soon" card that opens and returns via the Home link.
+   - [ ] Step 2: the ATC Radar Simulator itself.
 2. **Phase 2: more tools.** Add further aviation tools, one at a time.
 3. **Phase 3: polish.** Improve the look, helpful hints and accessibility as needed.
