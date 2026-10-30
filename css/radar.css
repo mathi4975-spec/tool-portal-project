@@ -18,8 +18,9 @@
 }
 
 .radar-wrap {
-  border: 1px solid var(--border);
   max-width: 40rem;
+  background: var(--screen);
+  border: 2px solid var(--line);
 }
 
 #radar {
@@ -29,41 +30,47 @@
   touch-action: manipulation;
 }
 
-.panel h2 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
-.scoreboard { margin-top: 0; }
+h2 { letter-spacing: 0.04em; text-transform: uppercase; }
+.panel h2 { font-size: 1rem; margin: 1.25rem 0 0.5rem; }
+.scoreboard { margin-top: 0; font-family: var(--font-mono); }
 
 input {
-  font: inherit;
-  color: var(--text);
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 0.35rem 0.5rem;
   min-width: 0;
   flex: 1;
+  padding: 0.35rem 0.5rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: 0;
+  font: 1rem var(--font-mono);
 }
 
 .command-row { display: flex; gap: 0.5rem; margin-top: 0.25rem; }
-.command-row button, .controls button, .aircraft-list button { min-height: 2.5rem; }
 
 #messages {
   min-height: 7.5rem;
   margin-top: 0.5rem;
   padding: 0.5rem;
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 4px;
+  border: 2px solid var(--line);
 }
 #messages div { margin-bottom: 0.25rem; }
 
 .aircraft-list { list-style: none; margin: 0; padding: 0; }
 .aircraft-list li { margin-bottom: 0.25rem; }
-.aircraft-list button { width: 100%; text-align: left; }
-.aircraft-list button[aria-pressed="true"] { border-color: var(--link); font-weight: bold; }
+.aircraft-list button {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  text-transform: none;
+  font-weight: 500;
+}
+.aircraft-list button[aria-pressed="true"] { border-color: var(--link); background: var(--surface); font-weight: 700; }
 .aircraft-list button.warn { color: var(--danger); }
 
 .controls { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.controls button:disabled { opacity: 0.5; cursor: default; }
+.controls button:disabled { opacity: 0.55; cursor: default; }
 
 .help { margin-top: 1.5rem; }
+.help h3 { text-transform: uppercase; letter-spacing: 0.04em; font-size: 1rem; }
 .note { color: var(--muted); }

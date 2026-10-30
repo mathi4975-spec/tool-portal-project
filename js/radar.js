@@ -276,9 +276,10 @@
   function colours() {
     var css = getComputedStyle(document.documentElement);
     function get(name) { return css.getPropertyValue(name).trim(); }
+    // The radar is a dark screen in both themes, so it uses the screen colours.
     return {
-      surface: get('--surface'), border: get('--border'), text: get('--text'),
-      link: get('--link'), danger: get('--danger')
+      surface: get('--screen'), border: get('--screen-line'), text: get('--screen-ink'),
+      link: get('--glow'), danger: get('--screen-danger')
     };
   }
 

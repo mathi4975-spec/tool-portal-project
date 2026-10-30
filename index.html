@@ -4,27 +4,53 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aviation Tool Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap">
   <link rel="stylesheet" href="css/base.css">
   <script src="js/theme.js"></script>
 </head>
 <body>
   <header class="site-header">
-    <nav><a href="index.html">Home</a></nav>
+    <nav><a href="index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>Home</a></nav>
     <button id="theme-toggle" type="button">Switch to dark theme</button>
   </header>
 
   <main>
+    <p class="eyebrow">Aviation tools / for tertiary students</p>
     <h1>Aviation Tool Portal</h1>
-    <p>Try small aviation tools right in your browser.</p>
+    <p class="intro">Try small aviation tools right in your browser.</p>
 
-    <h2>Tools</h2>
+    <h2 class="section-title">Tools</h2>
     <ul class="tool-grid">
       <li>
         <a class="tool-card" href="tools/radar/index.html">
-          <h3>ATC Radar Simulator</h3>
-          <p>Play air traffic controller: guide planes to the runway and keep them apart.</p>
+          <div class="tool-tag"><span>Tool 01</span><span>Simulator</span></div>
+          <div class="tool-thumb">
+            <svg viewBox="0 0 240 140" fill="none" aria-hidden="true">
+              <circle cx="120" cy="70" r="20" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"></circle>
+              <circle cx="120" cy="70" r="42" stroke="currentColor" stroke-opacity="0.4" stroke-width="1.5"></circle>
+              <circle cx="120" cy="70" r="64" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5"></circle>
+              <path d="M120 70L170 22" stroke="currentColor" stroke-opacity="0.7" stroke-width="2"></path>
+              <path d="M52 70h60" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"></path>
+              <path d="M112 70h16" stroke="currentColor" stroke-width="5"></path>
+              <rect x="194" y="30" width="8" height="8" fill="currentColor"></rect>
+              <rect x="54" y="104" width="8" height="8" fill="currentColor"></rect>
+            </svg>
+          </div>
+          <div class="tool-body">
+            <h3>ATC Radar Simulator</h3>
+            <p>Play air traffic controller: guide planes to the runway and keep them apart.</p>
+            <dl class="tool-io">
+              <dt>In</dt><dd>Typed commands</dd>
+              <dt>Out</dt><dd>Score</dd>
+            </dl>
+            <span class="tool-open">Open tool
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </span>
+          </div>
         </a>
       </li>
+      <li class="tool-slot">Next tool: slot open</li>
     </ul>
   </main>
 </body>
