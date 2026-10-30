@@ -5,11 +5,20 @@
 - No frameworks, no build step: files open directly in a browser.
 
 ## Project Structure
-Nearly empty for now. Currently only:
-- `README.md` — project readme
-- `CLAUDE.md` — this file
+- `index.html` — portal homepage (one card per tool)
+- `tools/<tool-name>/index.html` — one folder per tool; currently `tools/radar/` (ATC Radar Simulator)
+- `css/base.css` — shared styles and theme colours; `css/radar.css` — radar page only
+- `js/theme.js` — light/dark toggle; `js/radar.js` — radar game
+- `README.md` — project readme; `CLAUDE.md` — this file
 
-Add new files at the top level or in simple folders (e.g. `css/`, `js/`) and update this section when they appear.
+Keep each tool's own files named after the tool, and update this section when files are added.
+
+## Visual Design
+"Flight Strip" look, chosen from three options:
+- Fonts: JetBrains Mono for headings and buttons, IBM Plex Sans for body text (loaded from Google Fonts, with system fallbacks).
+- Square corners and 2px outlines.
+- Colours are CSS variables at the top of `css/base.css`, for both themes. Change colours there, not in individual pages.
+- The radar screen stays dark in both themes.
 
 ## Key Requirements
 1. Every page must be responsive and work on desktop, tablet and phone.
